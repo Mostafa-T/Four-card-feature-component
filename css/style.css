@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/* 
+
+  ========================
+    CSS INDEX
+  ========================
+
+    -- Global styling
+    -- Header
+    -- Feature section
+    -- Media Query
+    -- Custom Faremwork
+
+*/
+
+/* Start Gloabl styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* End Gloabl styling */
+
+/* Start header */
+
+header {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.light-header {
+  font-weight: 200;
+}
+
+.bold-header {
+  font-weight: 600;
+  margin-bottom: 1rem;
+
+}
+
+header p {
+  width: 50%;
+  margin: auto;
+  font-weight: 200;
+}
+/* End header */
+
+
+/* Start Features */
+
+.features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 3rem 0rem;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.feature__card {
+  width: 350px;
+  margin: .5rem;
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px #eee;
+  
+  transition: .2s ease-in-out;
+}
+
+.feature__card:hover {
+  transform: scale(1.05);
+}
+
+
+.feature__card h3 {
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+
+.feature__card p {
+  font-size: .9rem;
+  font-weight: 200;
+}
+
+.feature__img {
+  margin-top: 2rem ;
+  display: block;
+  text-align: right;
+}
+
+.cayan {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.yellow {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+/* End Features */
+
+
+/* Start Media Queries */
+
+@media (max-width: 765px) {
+
+  .light-header, .bold-header {
+    font-size: 1.5rem;
+  }
+
+  
+
+  header p {
+    width: auto;
+    margin: 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .feature__card {
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+
+  }
+  .column-flex {
+    align-items: center;
+  }
+}
+
+
+/* End Media Queries */
+
+/* Start Custom Farmework */
+
+.container {
+  min-height: 100vh;
+  max-height: 100%;
+
+  margin: auto;
+  padding: 0px 10px;
+}
+
+@media (min-width: 420px) {
+  .container {
+    width: 390px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 740px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+/* End Custom Farmework */
+
+
+
+
+.attribution { font-size: 14px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
